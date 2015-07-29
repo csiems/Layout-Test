@@ -1,0 +1,133 @@
+/****************************
+GENERAL
+*****************************/
+
+h1 {
+  font-size: 1.75em;
+}
+
+body {
+  max-width: 940px;
+}
+
+
+
+/****************************
+HEADER
+*****************************/
+
+header h1 {
+  padding: 20px 2.5% 0;
+  margin: 5px;
+}
+
+
+
+/****************************
+NAVIGATION
+*****************************/
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: 5px 1px;
+}
+
+
+
+/****************************
+BODY
+*****************************/
+
+@media screen and (min-width: 480px) {
+
+  /* Faking equal height columns with this article http://bit.ly/1x9re7k */ 
+  
+  .container2 {
+    clear: left;
+    float: left;
+	  width: 100%;
+    overflow: hidden;
+  }
+  
+  .container1 {
+    float: left;
+	  width: 100%;
+    position: relative;
+    right: 30%;
+  }
+    
+  .column1 {
+    float: left;
+	  width: 66%;
+    position: relative;
+    left: 32%;
+    overflow: hidden;
+    }
+  
+  .column2 {
+    float: left;
+	  width: 26%;
+    position: relative;
+    left: 36%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .column1 {
+    padding: 2%;
+  }
+  
+  .column2 {
+    clear: left;
+    padding: 2%;
+  }
+}
+
+
+
+/****************************
+COLORS
+*****************************/
+
+/* site body */
+body {
+  background-color: #A8A19B;
+}
+
+/* light gray header */
+header {
+  background-color: #DDDDDD;
+}
+
+/* nav background */
+nav {
+  background-color: #CB999C;
+}
+
+/* container1 background same as column1 background to fake equal columns */
+.container1, .column1 {
+  background-color: #9ACC99;
+}
+
+/* container2 background same as column2 background to fake equal columns */
+.container2, .column2 {
+  background-color: #9999CD;
+}  
+
+/* unvisted link */
+a:link {
+  color: blue;
+}
+
+/* visted link */
+a:visted {
+  color: purple;
+}
